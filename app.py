@@ -12,7 +12,7 @@ os.makedirs(UPLOAD_FOLDER, exist_ok=True)
 app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
 
 # Load the model
-species_model = keras.models.load_model('models/model.h5')
+# species_model = keras.models.load_model('models/model.h5')
 expression_model = keras.models.load_model('models/expression.h5')
 
 # Fungsi preprocessing gambar
@@ -59,7 +59,7 @@ def predict():
         processed_image = preprocess_image(image, target_size=(224, 224))  # Adjust size for your model
 
         # Make prediction
-        species = species_model.predict(processed_image)[0][0].tolist()
+        # species = species_model.predict(processed_image)[0][0].tolist()
         expression = expression_model.predict(processed_image)[0].tolist()
 
         expression = expression.index(max(expression))
@@ -67,7 +67,7 @@ def predict():
         os.remove(file_path)
 
         # Return the prediction as JSON
-        return jsonify({'prediction': {'species': species, 'expression': expression}})
+        return jsonify({'prediction': {'expression': expression}})
     except Exception as e:
         return jsonify({'error': str(e)}), 500
 

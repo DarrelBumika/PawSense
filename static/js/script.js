@@ -147,11 +147,11 @@ async function handleFile(file) {
             expressionDisplay.classList.remove(...expressionDisplay.classList);
             expressionDisplay.classList.add("selection:text-white")
 
-            if (data.prediction.species > 0.5) {
-                species = "Dog"
-            } else {
-                species = "Cat"
-            }
+            // if (data.prediction.species > 0.5) {
+            //     species = "Dog"
+            // } else {
+            //     species = "Cat"
+            // }
 
             if (data.prediction.expression === 0) {
                 styling = ["text-primary", "selection:bg-primary"];
