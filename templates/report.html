@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Report Page</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100">
+    <div class="max-w-lg mx-auto mt-10 bg-white p-8 rounded-lg shadow-md">
+        <h1 class="text-2xl font-bold text-gray-800 text-center mb-6">Report Page</h1>
+        <form action="/submit_report" method="post" class="space-y-4">
+            <!-- Dropdown Category -->
+            <div>
+                <label for="category" class="block text-gray-700 font-semibold mb-2">Category</label>
+                <select id="category" name="category"
+                        class="w-full border-gray-300 rounded-lg shadow-sm focus:ring-blue-500 focus:border-blue-500"
+                        required>
+                    <option value="">-- Select a Category --</option>
+                    <option value="bug">Bug Report</option>
+                    <option value="feedback">Feedback</option>
+                    <option value="feature">Feature Request</option>
+                </select>
+            </div>
+
+            <!-- Title -->
+            <div>
+                <label for="title" class="block text-gray-700 font-semibold mb-2">Report Title</label>
+                <input type="text" id="title" name="title" placeholder="Enter the title"
+                       class="w-full border-gray-300 rounded-lg shadow-sm focus:ring-blue-500 focus:border-blue-500"
+                       required>
+            </div>
+
+            <!-- Description -->
+            <div>
+                <label for="description" class="block text-gray-700 font-semibold mb-2">Report Description</label>
+                <textarea id="description" name="description" rows="5" placeholder="Describe the issue or feedback"
+                          class="w-full border-gray-300 rounded-lg shadow-sm focus:ring-blue-500 focus:border-blue-500"
+                          required></textarea>
+            </div>
+
+            <!-- Submit Button -->
+            <div>
+                <button type="submit"
+                        class="w-full bg-blue-500 hover:bg-blue-600 text-white font-semibold py-2 px-4 rounded-lg shadow">
+                    Submit Report
+                </button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

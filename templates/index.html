@@ -1,0 +1,76 @@
+<!-- File ./templates/index.html  -->
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="{{ url_for('static',filename='css/output.css') }}" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="/static/source/logo_icon.ico"/>
+    <title>PawSense</title>
+</head>
+<body class="selection:bg-primary">
+
+{# Header #}
+<header class="bg-white w-full py-6 px-24 flex justify-between items-center sticky top-0 drop-shadow z-50">
+    <a href="/#home">
+        <img src="/static/source/logo.png" alt="logo" class="hover:cursor-pointer"/>
+    </a>
+    <div class="flex gap-16">
+        <a class="font-black text-third hover:cursor-pointer hover:scale-105 ease-in-out transition-transform"
+           href="/classify">Sense Now!</a>
+        <a class="hover:cursor-pointer hover:scale-105 hover:text-primary ease-in-out transition-transform"
+           href="/#home">Home</a>
+        <a class="hover:cursor-pointer hover:scale-105 hover:text-primary ease-in-out transition-transform"
+           href="/#content">Learn More</a>
+        <a class="hover:cursor-pointer hover:scale-105 hover:text-primary ease-in-out transition-transform"
+           href="/#about">About Us</a>
+        <a class="hover:cursor-pointer hover:scale-105 hover:text-primary ease-in-out transition-transform">Contact</a>
+    </div>
+</header>
+
+<main>
+    {% for template in contents %}
+        {% include template %}
+    {% endfor %}
+</main>
+
+{# Footer #}
+<footer class="w-full bg-third p-10 flex flex-col justify-center items-center">
+    <div class="w-full flex flex-col items-center gap-20">
+        <div class="flex flex-col gap-8 justify-center items-center">
+            <img src="/static/source/logo_white.png" alt="logo"/>
+
+            <div class="flex justify-center items-center gap-8">
+                <a class="text-white hover:cursor-pointer hover:underline"
+                   href="/classify">Sense Now!</a>
+                <a class="hover:cursor-pointer text-white hover:underline"
+                   href="/#home">Home</a>
+                <a class="hover:cursor-pointer text-white hover:underline"
+                   href="/#content">Learn More</a>
+                <a class="hover:cursor-pointer text-white hover:underline"
+                   href="/#about">About Us</a>
+                <a class="hover:cursor-pointer text-white hover:underline">Contact</a>
+            </div>
+        </div>
+
+        <div class="w-full flex justify-between items-center gap-1">
+            <a class="max-w-[256px] text-base text-white text-center">Darrel B., UNY, Yogyakarta</a>
+            <div class="flex gap-4">
+                <a class="flex justify-center" href="/">
+                    <img src="/static/source/github_icon.png" class="object-none" alt="github"/>
+                </a>
+                <a class="flex justify-center" href="/">
+                    <img src="/static/source/linkedin_icon.png" class="object-none" alt="dataset"/>
+                </a>
+                <a class="flex justify-center" href="/">
+                    <img src="/static/source/instagram_icon.png" class="object-none" alt="dataset"/>
+                </a>
+            </div>
+            <div class="max-w-[256px] flex gap-2">
+                <a class="text-white">@2024 All right reserved</a>
+            </div>
+        </div>
+    </div>
+</footer>
+</body>
+</html>

@@ -1,0 +1,184 @@
+<div id="content" class="flex flex-col justify-center items-center">
+    <div class="w-[1000px] flex flex-col justify-center items-center mt-[200px] gap-16">
+        <a class="text-[64px] font-bold text-wrap leading-[64px] text-center">What they feeling right now?</a>
+        <a class="text-xl font-normal text-wrap text-center">
+            Pernahkah anda bertanya-tanya apa yang sedang dirasakan oleh hewan peliharaan anda? Apakah mereka sedang
+            bahagia, marah, sedih, atau mungkin merasa lainnya? Melalui web ini, kami menyediakan alat untuk mendeteksi
+            emosi
+            hewan peliharaan anda. Cukup dengan mengunggah foto hewan peliharaan anda, kami akan memberikan informasi
+            tentang emosi hewan peliharaan anda dan treatment apa yang cocok untuk hewan peliharaan anda sesuai emosi
+            mereka
+        </a>
+
+        <div class="flex flex-col gap-4">
+            <a class="text-xl font-normal text-wrap text-center">
+                Berikut daftar emosi dan treatment apa yang paling cocok untuk hewan peliharaan anda sesuai dengan
+                kondisi
+                emosi mereka
+            </a>
+
+            <div class="flex gap-8 justify-center items-center">
+                <a class="font-bold text-xl hover:cursor-pointer hover-underline-animation after:bg-primary"
+                   href="/#happy">Happy</a>
+                <a class="font-bold text-xl hover:cursor-pointer hover-underline-animation after:bg-pink"
+                   href="/#angry">Angry</a>
+                <a class="font-bold text-xl hover:cursor-pointer hover-underline-animation after:bg-purple"
+                   href="/#sad">Sad</a>
+                <a class="font-bold text-xl hover:cursor-pointer hover-underline-animation after:bg-third"
+                   href="/#others">Others</a>
+            </div>
+        </div>
+
+        <a class="p-2 bg-primary rounded-full animate-bounce cursor-pointer" href="/#happy">
+            <img src="/static/source/down_arrow.png" alt="arrow down">
+        </a>
+    </div>
+
+    {# Happy #}
+    <div id="happy" class="flex justify-center items-center gap-32 pt-[100px] mt-[-100px]">
+        <img src="/static/source/happy_cat.png" alt="happy cat">
+
+        <div class="flex flex-col w-[620px] gap-8">
+            <div class="flex flex-col gap-2">
+                <a class="text-[64px] font-bold text-primary selection:bg-primary selection:text-white">Happy :D</a>
+                <a class="text-base">
+                    Setiap pemilik hewan peliharaan pasti menginginkan anjing atau kucing kesayangan mereka merasa
+                    bahagia. Kebahagiaan hewan peliharaan bukan hanya tentang ekor yang bergoyang atau purring lembut,
+                    tetapi juga tentang kesehatan mental dan fisik mereka. IHewan peliharaan yang bahagia adalah
+                    cerminan dari cinta dan perhatian yang kita berikan setiap hari!
+                </a>
+            </div>
+            <div class="flex gap-8">
+                <div class="flex flex-col gap-2">
+                    <a class="text-4xl font-bold">Dog</a>
+                    <a class="text-base">
+                        Tingkatkan kebahagiaan mereka dengan mengajak bermain di luar rumah, seperti bermain
+                        lempar tangkap (fetch) atau berjalan-jalan di taman. Memberikan camilan sehat sebagai
+                        hadiah setelah bermain juga dapat memperkuat ikatan emosional Anda dengan anjing anda.
+                    </a>
+                </div>
+                <div class="flex flex-col gap-2">
+                    <a class="text-4xl font-bold">Cat</a>
+                    <a class="text-base">
+                        Berikan stimulasi dengan mainan interaktif seperti tongkat berbulu atau laser pointer.
+                        Pastikan mereka memiliki akses ke tempat istirahat yang nyaman, seperti tempat tidur yang
+                        empuk atau spot dekat jendela untuk berjemur. Pujian verbal dan belaian lembut juga akan
+                        membuat kucing merasa dihargai.
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    {# Angry #}
+    <div id="angry" class="flex justify-center items-center gap-32 pt-[150px] mt-[-150px]">
+        <div class="flex flex-col w-[620px] gap-8">
+            <div class="flex flex-col gap-2">
+                <a class="text-[64px] font-bold text-right text-pink selection:bg-pink selection:text-white">Angry
+                    >:(</a>
+                <a class="text-base text-right">
+                    Seperti manusia, hewan peliharaan juga bisa merasa marah. Baik itu karena merasa terganggu,
+                    tidak nyaman, atau ada sesuatu yang memicu rasa frustrasi mereka. Sebagai pemilik, penting untuk
+                    mengenali tanda-tanda kemarahan seperti mendesis pada kucing atau menggeram pada anjing. Ingatlah,
+                    respons yang penuh kesabaran dan kasih sayang akan membantu mengatasi emosi mereka dengan
+                    lebih efektif.
+                </a>
+            </div>
+            <div class="flex gap-8">
+                <div class="flex flex-col gap-2">
+                    <a class="text-4xl font-bold text-right">Dog</a>
+                    <a class="text-base text-right">
+                        Pastikan mereka tidak merasa terancam. Beri waktu untuk menenangkan diri di lingkungan
+                        yang tenang. Jangan berteriak atau menunjukkan sikap agresif karena ini dapat memperburuk
+                        situasi. Anda bisa menggunakan teknik desensitisasi atau memberi penghargaan untuk perilaku
+                        yang tenang jika amarah dipicu oleh pemicu spesifik seperti suara keras atau orang asing.
+                    </a>
+                </div>
+                <div class="flex flex-col gap-2">
+                    <a class="text-4xl font-bold text-right">Cat</a>
+                    <a class="text-base text-right">
+                        Jangan memaksa interaksi. Berikan ruang untuk bersembunyi atau melarikan diri. Pastikan
+                        lingkungan tetap tenang, tanpa suara keras atau gerakan tiba-tiba yang dapat membuat mereka
+                        semakin defensif. Anda juga bisa memberikan feromon sintetis yang menenangkan.
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <img src="/static/source/angry_dog.png" alt="happy cat">
+    </div>
+
+    {# Sad #}
+    <div id="sad" class="flex justify-center items-center gap-32 pt-[150px] mt-[-150px]">
+        <img src="/static/source/sad_cat.png" alt="happy cat">
+
+        <div class="flex flex-col w-[620px] gap-8">
+            <div class="flex flex-col gap-2">
+                <a class="text-[64px] font-bold text-purple selection:bg-purple selection:text-white">Sad :(</a>
+                <a class="text-base">
+                    Kehilangan semangat atau terlihat lesu adalah tanda-tanda bahwa hewan peliharaan kita mungkin
+                    sedang merasa sedih. Penyebabnya bisa beragam, dari perubahan lingkungan hingga rasa kesepian.
+                    Sebagai sahabat mereka, penting bagi kita untuk memberikan perhatian ekstra di saat-saat seperti
+                    ini. Dengan meluangkan waktu bermain atau hanya duduk bersama mereka, kita dapat membantu mereka
+                    merasa dicintai dan dihargai. Hewan peliharaan yang bahagia selalu dimulai dari hubungan yang
+                    penuh perhatian.
+                </a>
+            </div>
+            <div class="flex gap-8">
+                <div class="flex flex-col gap-2">
+                    <a class="text-4xl font-bold">Dog</a>
+                    <a class="text-base">
+                        Tingkatkan interaksi seperti bermain atau berjalan-jalan. Pastikan mereka mendapatkan waktu
+                        berkualitas dengan Anda untuk mengurangi rasa kesepian. Jika penyebab kesedihan adalah
+                        kehilangan teman atau perubahan lingkungan, konsistensi dalam rutinitas sangat penting.
+                    </a>
+                </div>
+                <div class="flex flex-col gap-2">
+                    <a class="text-4xl font-bold">Cat</a>
+                    <a class="text-base">
+                        Berikan perhatian ekstra melalui belaian lembut atau mainan favorit. Jika mereka sedih
+                        karena kehilangan atau stres, tambahkan stimulasi mental seperti puzzle makanan. Jangan
+                        lupa memastikan mereka tetap makan dan minum dengan baik.
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    {# Others #}
+    <div id="others" class="flex justify-center items-center gap-32 pt-[150px] mt-[-150px]">
+        <div class="flex flex-col w-[620px] gap-8">
+            <div class="flex flex-col gap-2">
+                <a class="text-[64px] font-bold text-right text-third selection:bg-third selection:text-white">Others
+                    :|</a>
+                <a class="text-base text-right">
+                    Selain bahagia, marah, atau sedih, hewan peliharaan juga memiliki spektrum emosi lainnya
+                    seperti rasa takut, cemas, atau bahkan bingung. Setiap emosi ini memiliki cara tersendiri untuk
+                    dikenali dan ditangani. Dengan mempelajari bahasa tubuh mereka, seperti ekor yang melengkung atau
+                    postur yang tegang, kita dapat memahami apa yang sedang mereka rasakan. Dalam setiap situasi,
+                    kasih sayang dan pengertian adalah kunci untuk membantu mereka merasa lebih baik.
+                </a>
+            </div>
+            <div class="flex gap-8">
+                <div class="flex flex-col gap-2">
+                    <a class="text-4xl font-bold text-right">Dog</a>
+                    <a class="text-base text-right">
+                        Untuk anjing yang cemas, Anda dapat menggunakan terapi perilaku, seperti counter-conditioning.
+                        Penggunaan jaket penenang atau musik yang menenangkan juga dapat membantu. Jika ketakutan
+                        berlebihan, konsultasikan dengan dokter hewan untuk opsi terapi tambahan.
+                    </a>
+                </div>
+                <div class="flex flex-col gap-2">
+                    <a class="text-4xl font-bold text-right">Cat</a>
+                    <a class="text-base text-right">
+                        Jika kucing Anda cemas atau takut, pastikan lingkungan mereka aman dan mendukung, misalnya
+                        menyediakan tempat persembunyian yang nyaman. Mainan interaktif dapat membantu mengalihkan
+                        perhatian mereka. Hindari memaksa mereka menghadapi pemicu langsung sebelum mereka tenang.
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <img src="/static/source/others_dog.png" alt="happy cat">
+    </div>
+</div>
